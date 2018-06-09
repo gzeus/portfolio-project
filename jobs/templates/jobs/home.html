@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en" xmlns:max-height="http://www.w3.org/1999/xhtml">
+{% load staticfiles %}
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -27,7 +28,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
                 <a class="nav-item nav-link" href="#">Twitter</a>
-                <a class="nav-item nav-link" href="#">Resume</a>
+                <a class="nav-item nav-link" href="{% static 'Kohout-resume.pdf' %}">Resume</a>
                 <a class="nav-item nav-link" href="#">Blog</a>
             </div>
         </div>
@@ -44,6 +45,8 @@
                 <a href="#" class="btn btn-primary my-2">Contact me!</a>
 
             </p>
+            <img src="{% static 'Krystof_Kohout.jpg' %}" height="250" width="250" class="img-thumbnail img-fluid"
+                 alt="">
         </div>
     </section>
 
